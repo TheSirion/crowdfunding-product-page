@@ -13,17 +13,6 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <title>Frontend Mentor | Crowdfunding product page</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <nav>
@@ -40,27 +29,45 @@
     </nav>
 
     <section class="card">
+      <img src="images/logo-mastercraft.svg" alt="" />
       <h1>Mastercraft Bamboo Monitor Riser</h1>
       <p>
         A beautiful & handcrafted monitor stand to reduce neck and eye strain.
       </p>
       <div class="buttons-wrapper">
-        <button>Back this project</button>
-        <a href="#">
-          <img src="images/icon-bookmark.svg" alt="bookmark button" />
-        </a>
+        <div class="button">
+          <button>Back this project</button>
+        </div>
+        <div class="button">
+          <a href="#">
+            <img
+              src="images/icon-bookmark.svg"
+              alt="bookmark button"
+              class="svg"
+            />
+          </a>
+        </div>
       </div>
     </section>
 
     <section class="card">
-      <h2 class="number" id="first-number">$89,914</h2>
-      <p>of $100,000 backed</p>
-      <hr />
-      <h2 class="number">5,007</h2>
-      <p>total backers</p>
-      <hr />
-      <h2 class="number">56</h2>
-      <p>days left</p>
+      <div class="backers-figures">
+        <div class="backers-number">
+          <h2 class="number">$89,914</h2>
+          <p>of $100,000 backed</p>
+        </div>
+        <hr />
+        <div class="backers-number middle">
+          <h2 class="number">5,007</h2>
+          <p>total backers</p>
+        </div>
+        <hr />
+        <div class="backers-number">
+          <h2 class="number">56</h2>
+          <p>days left</p>
+        </div>
+      </div>
+
       <div class="progress-bar">
         <div class="progress"></div>
       </div>
@@ -81,48 +88,64 @@
       </p>
 
       <div class="reward">
-        <h3>Bamboo Stand</h3>
-        <h4 class="pledge">Pledge $25 or more</h4>
+        <div class="reward-title">
+          <h3>Bamboo Stand</h3>
+          <h4 class="pledge">Pledge $25 or more</h4>
+        </div>
         <p>
           You get an ergonomic stand made of natural bamboo. You've helped us
           launch our promotional campaign, and you’ll be added to a special
           Backer member list.
         </p>
-        <div class="numbers-left-wrapper">
-          <span class="remaining">101</span>
-          <span>left</span>
+
+        <div class="reward-footer">
+          <div class="numbers-left-wrapper">
+            <span class="remaining">101</span>
+            <span>left</span>
+          </div>
+          <button>Select Reward</button>
         </div>
-        <button>Select Reward</button>
       </div>
 
       <div class="reward">
-        <h3>Black Edition Stand</h3>
-        <h4 class="pledge">Pledge $75 or more</h4>
+        <div class="reward-title">
+          <h3>Black Edition Stand</h3>
+          <h4 class="pledge">Pledge $75 or more</h4>
+        </div>
         <p>
           You get a Black Special Edition computer stand and a personal thank
           you. You’ll be added to our Backer member list. Shipping is included.
         </p>
 
-        <div class="numbers-left-wrapper">
-          <span class="remaining">64</span>
-          <span>left</span>
+        <div class="reward-footer">
+          <div class="numbers-left-wrapper">
+            <span class="remaining">64</span>
+            <span>left</span>
+          </div>
+          <button>Select Reward</button>
         </div>
-        <button>Select Reward</button>
       </div>
 
       <div class="reward disabled">
-        <h3>Mahogany Special Edition</h3>
-        <h4 class="pledge">Pledge $200 or more</h4>
+        <div class="reward-title">
+          <h3>Mahogany Special Edition</h3>
+          <h4 class="pledge">Pledge $200 or more</h4>
+        </div>
         <p>
           You get two Special Edition Mahogany stands, a Backer T-Shirt, and a
           personal thank you. You’ll be added to our Backer member list.
           Shipping is included.
         </p>
-        <div class="numbers-left-wrapper">
-          <span class="remaining">0</span>
-          <span>left</span>
+
+        <div class="reward-footer">
+          <div class="numbers-left-wrapper">
+            <span class="remaining">0</span>
+            <span>left</span>
+          </div>
+          <button class="disabled disabled-button" disabled>
+            Out of Stock
+          </button>
         </div>
-        <button class="disabled disabled-button" disabled>Out of Stock</button>
       </div>
     </section>
 
